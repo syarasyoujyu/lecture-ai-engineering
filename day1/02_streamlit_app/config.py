@@ -1,3 +1,3 @@
 # config.py
 DB_FILE = "chat_feedback.db"
-MODEL_NAME = "meta-llama/Llama-3.2-3B-Instruct-SpinQuant_INT4_EO8"
+MODEL_NAME = "google/gemma-2-2b-jpn-it"
