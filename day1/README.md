@@ -6,7 +6,8 @@
 
 リポジトリ内の「day1_practice.ipynb」をGoogle Colabで開き、演習を行なってください。
 
-- [Open with Colab](https://colab.research.google.com/github/matsuolab/lecture-ai-engineering/blob/master/day1/day1_practice.ipynb)
+- [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/syarasyoujyu/lecture-ai-engineering/blob/master/day1/day1_practice.ipynb)
+
 
 ## 事前準備
 
