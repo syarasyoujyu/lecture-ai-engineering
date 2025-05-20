@@ -172,6 +172,7 @@ def test_model_reproducibility(sample_data, preprocessor):
         predictions1, predictions2
     ), "モデルの予測結果に再現性がありません"
 
+
 def test_model_save_load():
     """モデルの保存と読み込みを検証"""
     # モデルの保存
@@ -184,9 +185,12 @@ def test_model_save_load():
         loaded_model = pickle.load(f)
 
     # 読み込んだモデルが元のモデルと同じであることを確認
-    assert isinstance(loaded_model, RandomForestClassifier), "モデルの読み込みに失敗しました"
+    assert isinstance(
+        loaded_model, RandomForestClassifier
+    ), "モデルの読み込みに失敗しました"
     assert loaded_model.n_estimators == 100, "モデルのパラメータが一致しません"
     assert loaded_model.random_state == 42, "モデルのパラメータが一致しません"
+
 
 def test_model_prediction_shape_and_type(train_model):
     """推論結果の型とshapeが正しいことを検証"""
@@ -198,6 +202,7 @@ def test_model_prediction_shape_and_type(train_model):
     assert preds.shape[0] == X_test.shape[0]
     # 値が0または1のみ
     assert set(np.unique(preds)).issubset({0, 1})
+
 
 def test_model_feature_count(train_model):
     """モデルの入力特徴量数が想定通りであることを検証"""
